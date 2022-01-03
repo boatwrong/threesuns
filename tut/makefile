@@ -1,2 +1,5 @@
-e2t:	e2t.c func.c
-	gcc -o eng2tut e2t.c func.c
+e2t:	e2t.c isVowel.c
+	gcc -o bin/eng2tut e2t.c isVowel.c
+
+t2e:	t2e.c isVowel.c
+	gcc -o bin/tut2eng t2e.c isVowel.c
