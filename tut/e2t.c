@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 	{
 		printf("English to Tut\n");
 
-		isVowel();
+		isvowel();
+		isvowel();
 
         int inputLength = strlen(argv[1]);
 
