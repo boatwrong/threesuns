@@ -13,9 +13,8 @@ int main(int argc, char *argv[])
 
 	if(argc == 2)
 	{
-		printf("Tut to English\n");
+		printf("English to Tut\n");
 
-		isVowel();
 
         int inputLength = strlen(argv[1]);
 
@@ -31,7 +30,21 @@ int main(int argc, char *argv[])
 
         strcpy(input, argv[1]);
 
-        printf("%s\n", input);
+        printf("In english: %s\n", input);
+
+        printf("In tut: ");
+        for(int i = 0; i < strlen(input); i++)
+        {
+            printf("%c", input[i]);
+
+            if(!(isVowel(input[i]) == 0))
+            {
+                printf("ut");
+            }
+
+        }
+
+        printf("\n");
         free(input);
         return 0;
 	}

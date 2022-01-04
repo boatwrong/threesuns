@@ -30,15 +30,21 @@ int main(int argc, char *argv[])
 
         strcpy(input, argv[1]);
 
+        printf("In english: %s\n", input);
+
+        printf("In tut: ");
         for(int i = 0; i < strlen(input); i++)
         {
-            if((isVowel(input[i]) == 0))
+            printf("%c", input[i]);
+
+            if(!(isVowel(input[i]) == 0))
             {
-                printf("%c is a vowel\n", input[i]);
+                printf("ut");
             }
+
         }
 
-        printf("%s\n", input);
+        printf("\n");
         free(input);
         return 0;
 	}
