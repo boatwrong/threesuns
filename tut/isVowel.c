@@ -2,11 +2,23 @@
 
 int isVowel(char c)
 {
-    if((((int)c > 90 && (int)c < 97)) || (int)c < 65 || (int)c > 122)
+    int x = (int)c;
+    
+    if(x == 65 || x == 69 || x == 73 || x == 79 || x == 85)
     {
-        printf("is a charachter\n");
         return 0;
     }
-    return 1;
+
+    x += (65 - 97);
+
+    if(x == 65 || x == 69 || x == 73 || x == 79 || x == 85)
+    {
+        return 0;
+    }
+
+    else
+    {
+        return 1;
+    }
 }
 

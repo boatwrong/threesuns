@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
         for(int i = 0; i < strlen(input); i++)
         {
-            if(isVowel(input[i]) == 0)
+            if((isVowel(input[i]) == 0))
             {
                 printf("%c is a vowel\n", input[i]);
             }
