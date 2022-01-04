@@ -1,7 +1,12 @@
 #include<stdio.h>
 
-void isVowel()
+int isVowel(char c)
 {
-	printf("Vowel checker function\n");
+    if((((int)c > 90 && (int)c < 97)) || (int)c < 65 || (int)c > 122)
+    {
+        printf("is a charachter\n");
+        return 0;
+    }
+    return 1;
 }
 

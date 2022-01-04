@@ -15,8 +15,6 @@ int main(int argc, char *argv[])
 	{
 		printf("English to Tut\n");
 
-		isvowel();
-		isvowel();
 
         int inputLength = strlen(argv[1]);
 
@@ -31,6 +29,14 @@ int main(int argc, char *argv[])
         }
 
         strcpy(input, argv[1]);
+
+        for(int i = 0; i < strlen(input); i++)
+        {
+            if(isVowel(input[i]) == 0)
+            {
+                printf("%c is a vowel\n", input[i]);
+            }
+        }
 
         printf("%s\n", input);
         free(input);
