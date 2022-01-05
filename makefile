@@ -1,5 +1,5 @@
-di:			di.c
-	gcc -o di di.c
+di:			dice/di.c
+	gcc -o di dice/di.c
 
 e2t:		tut/e2t.c tut/isVowel.c
 	gcc -o eng2tut tut/e2t.c tut/isVowel.c
